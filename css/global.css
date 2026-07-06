@@ -1,0 +1,34 @@
+:root{
+    --primary-color: #FF305B;
+    --paragraph-color:#424452;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Exo 2", sans-serif;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}

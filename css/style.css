@@ -10,6 +10,7 @@ nav {
 }
 
 nav .content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +72,9 @@ nav ul li a.active::after {
     width: 100%;
     left: 0;
 }
-
+nav .btn-links {
+    display: none;
+}
 .hero {
     width: 100%;
     height: 100%;
@@ -88,11 +91,12 @@ nav ul li a.active::after {
 }
 
 .hero .content {
-    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
+    color: #fff;
     text-align: center;
 }
 

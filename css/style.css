@@ -111,17 +111,19 @@ nav ul li a.active::after {
 }
 
 .hero .content p {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     font-weight: 400;
     margin: 10px 0;
     font-size: 20px;
 }
 
-.hero .content p::after {
+.hero .content p::before {
     content: 'Designer |';
     display: block;
-    position: absolute;
-    right: 0;
-    width: 100px;
+    position: relative;
+    right: -5px;
     animation: writing 2s linear infinite alternate;
 }
 

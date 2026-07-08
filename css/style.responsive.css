@@ -1,5 +1,8 @@
 /* 350 */
 @media (max-width: 1300px) {
+    .container {
+        width: 90%;
+    }
 
     /* nav links */
     nav .btn-links {
@@ -64,6 +67,36 @@
     .hero .content p {
         font-size: 18px;
     }
+
+    /* About section */
+    #About .container {
+        gap: 50px;
+    }
+
+    #About .container .content {
+        width: 100%;
+    }
+
+    #About .container .img-content .layout ul li {
+        width: 30px;
+        height: 30px;
+    }
+
+    #About .container .frame {
+        width: 75%;
+    }
+
+    #About .container .content p {
+        font-size: 14px;
+    }
+
+    #About .content .about-me .info {
+        font-size: 14px;
+    }
+
+    #About .content button {
+        padding: 10px 15px;
+    }
 }
 
 /* 450 */
@@ -94,10 +127,39 @@
 }
 
 /* 850 */
-@media (min-width: 769px) and (max-width: 1300px) {}
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    /* About section */
+
+    #About .content .about-me .info {
+        font-size: 11px;
+    }
+}
 
 /* 1050 */
-@media (min-width: 992px) and (max-width: 1300px) {}
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    /* About section */
+    #About .container .content {
+        width: 50%;
+    }
+
+    #About .container .frame {
+        width: 75%;
+    }
+
+    #About .container .content p {
+        font-size: 14px;
+    }
+
+    #About .content .about-me .info {
+        font-size: 14px;
+    }
+
+    #About .content button {
+        padding: 10px 15px;
+    }
+}
 
 /* 1250 */
 @media (min-width: 1181px) and (max-width: 1300px) {}

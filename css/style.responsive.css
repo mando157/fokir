@@ -35,13 +35,13 @@
         background-color: #333;
         border-radius: 10px;
         padding: 0;
-        height: 0px;
+        height:0%;
         overflow: hidden;
         transition-duration: 1s
     }
 
     nav .content button:focus+.nav-links {
-        height: 200px;
+        height: 210px;
         padding-block: 10px;
     }
 
@@ -51,13 +51,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     /* hero section */
 
     .hero .content h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .hero .content h4 {
@@ -89,8 +89,9 @@
     #About .container .content p {
         font-size: 14px;
     }
-    #About .content .about-me{
-        grid-template-columns:1fr ;
+
+    #About .content .about-me {
+        grid-template-columns: 1fr;
     }
 
     #About .content .about-me .info {
@@ -106,9 +107,6 @@
 @media (min-width: 371px) and (max-width: 1300px) {
 
     /* hero content */
-    .hero .content h1 {
-        font-size: 40px;
-    }
 
     .hero .content h4 {
         font-size: 24px;
@@ -117,9 +115,10 @@
     .hero .content p {
         font-size: 16px;
     }
+
     /* About section */
-        #About .content .about-me{
-        grid-template-columns:1fr 1fr;
+    #About .content .about-me {
+        grid-template-columns: 1fr 1fr;
     }
 
 }

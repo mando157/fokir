@@ -110,6 +110,8 @@ nav .btn-links {
     font-weight: 600;
     margin: 10px 0;
     font-size: 80px;
+    /* font-size: clamp(min , average , max ); */
+    font-size: clamp(5rem, 4vw, 10rem);
     color: var(--primary-color);
     letter-spacing: 1.5px;
 }
@@ -193,17 +195,12 @@ header .scroll {
     border: 2px solid var(--primary-color);
     border-radius: 20px;
     background-color: transparent;
-}
-
-header .scroll .scroll-ball {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    border-radius: 20px;
     overflow: hidden;
 }
 
-header .scroll .scroll-ball .ball {
+header .scroll::after {
+    content: "";
+    display: block;
     position: absolute;
     left: 50%;
     top: -15px;
@@ -242,6 +239,7 @@ header .scroll .scroll-ball .ball {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 /*^ About image */
 
 #About .container .left-part {
@@ -264,24 +262,27 @@ header .scroll .scroll-ball .ball {
     border-radius: 10px;
     overflow: hidden;
 }
-#About .container .img-content img{
+
+#About .container .img-content img {
     width: 100%;
     border-radius: 10px;
 }
 
 #About .container .img-content .layout {
-    background-color:rgba(0, 0, 0 , .5);
+    background-color: rgba(0, 0, 0, .5);
     position: absolute;
     width: 100%;
     height: 100%;
     top: 100%;
     left: 0;
     border-radius: 10px;
-    transition-duration:1s;
+    transition-duration: 1s;
 }
-#About .container .img-content:hover .layout{
+
+#About .container .img-content:hover .layout {
     top: 0;
 }
+
 #About .container .img-content .layout ul {
     display: flex;
     justify-content: center;
@@ -289,6 +290,7 @@ header .scroll .scroll-ball .ball {
     gap: 20px;
     height: 100%;
 }
+
 #About .container .img-content .layout ul li {
     position: relative;
     width: 40px;
@@ -303,31 +305,37 @@ header .scroll .scroll-ball .ball {
     transition-duration: 1s;
     transition-delay: 1s;
 }
-#About .container .img-content .layout ul li:nth-of-type(2){
+
+#About .container .img-content .layout ul li:nth-of-type(2) {
     transition-delay: 1.20s;
 }
 
-#About .container .img-content .layout ul li:nth-of-type(3){
+#About .container .img-content .layout ul li:nth-of-type(3) {
     transition-delay: 1.40s;
 }
 
-#About .container .img-content .layout ul li:nth-of-type(4){
+#About .container .img-content .layout ul li:nth-of-type(4) {
     transition-delay: 1.60s;
 }
+
 #About .container .img-content:hover .layout ul li {
     opacity: 1;
     top: 0;
 }
-#About .container .img-content .layout ul li:nth-of-type(1) i{
+
+#About .container .img-content .layout ul li:nth-of-type(1) i {
     color: #1877f2;
 }
-#About .container .img-content .layout ul li:nth-of-type(2) i{
+
+#About .container .img-content .layout ul li:nth-of-type(2) i {
     color: #e4405f;
 }
-#About .container .img-content .layout ul li:nth-of-type(3) i{
+
+#About .container .img-content .layout ul li:nth-of-type(3) i {
     color: #1da1f2;
 }
-#About .container .img-content .layout ul li:nth-of-type(4) i{
+
+#About .container .img-content .layout ul li:nth-of-type(4) i {
     color: #1b1f23;
 }
 
@@ -336,42 +344,48 @@ header .scroll .scroll-ball .ball {
 #About .container .content {
     width: 50%;
 }
-#About .container .content h2{
+
+#About .container .content h2 {
     font-size: 30px;
     font-weight: 600;
     padding-inline: 10px;
     border-left: 4px solid var(--primary-color);
 }
+
 #About .container .content>p {
     padding-block: 20px;
     line-height: 1.5;
     color: var(--paragraph-color);
-    border-bottom:1px dashed #fff ;
+    border-bottom: 1px dashed #fff;
 }
+
 /* #About .container .content hr{
     margin-bottom:20px;
     border: 0;
     border-bottom: 1px dashed #fff;
 } */
 
-#About .content .about-me{
-    padding-block:20px;
+#About .content .about-me {
+    padding-block: 20px;
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    row-gap:15px;
+    row-gap: 15px;
     width: 100%;
 }
-#About .content .about-me .info{
+
+#About .content .about-me .info {
     display: flex;
     gap: 5px;
     font-size: 16px;
     font-weight: 500;
 }
-#About .content .about-me .info p{
+
+#About .content .about-me .info p {
     color: var(--paragraph-color);
 }
-#About .content button{
+
+#About .content button {
     padding: 15px 20px;
     background-color: transparent;
     border: 1px solid var(--primary-color);
@@ -381,13 +395,16 @@ header .scroll .scroll-ball .ball {
     transition-duration: .5s;
     cursor: pointer;
 }
-#About .content button:hover{
+
+#About .content button:hover {
     background-color: var(--primary-color);
 }
-#About .content button:hover a{
-    color:#fff;
+
+#About .content button:hover a {
+    color: #fff;
 }
-#About .content  button a{
-    color:var(--primary-color);
+
+#About .content button a {
+    color: var(--primary-color);
     transition-duration: .5s;
 }

@@ -1,13 +1,15 @@
-:root{
+:root {
     --primary-color: #FF305B;
-    --paragraph-color:#c1c1c1;
+    --paragraph-color: #c1c1c1;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -27,17 +29,64 @@ h5,
 h6 {
     font-family: "Exo 2", sans-serif;
 }
+
 li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
+
 .container {
     width: 80%;
     margin: auto;
 }
+
 section {
     padding: 60px 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0px auto 60px ;
+}
+
+.title h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.title .decor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 1px;
+    background-color: var(--primary-color)
+}
+
+.title .decor::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: var(--primary-color);
+    top: 5px;
+}
+
+.title .decor::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: var(--primary-color);
+    top: -5px;
 }

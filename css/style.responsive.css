@@ -35,7 +35,7 @@
         background-color: #333;
         border-radius: 10px;
         padding: 0;
-        height:0%;
+        height: 0%;
         overflow: hidden;
         transition-duration: 1s
     }
@@ -101,6 +101,11 @@
     #About .content button {
         padding: 10px 15px;
     }
+
+    #Services .container .box {
+        width: 100%;
+    }
+
 }
 
 /* 450 */
@@ -130,6 +135,13 @@
     .hero .content h1 {
         font-size: 50px;
     }
+
+    /*^ Services section */
+    #Services .container .box {
+        gap: 20px;
+        width: 44%;
+        min-width: 250px;
+    }
 }
 
 /* 850 */
@@ -140,6 +152,7 @@
     #About .content .about-me .info {
         font-size: 11px;
     }
+
 }
 
 /* 1050 */
@@ -164,6 +177,10 @@
 
     #About .content button {
         padding: 10px 15px;
+    }
+
+    #Services .container .box {
+        width: 20%;
     }
 }
 

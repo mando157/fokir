@@ -408,3 +408,48 @@ header .scroll::after {
     color: var(--primary-color);
     transition-duration: .5s;
 }
+
+/* Services section */
+#Services .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+#Services .container .box{
+    width: 25%;
+}
+
+#Services .container .box .card {
+    margin: auto;
+    max-width: 250px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+    transition-duration: .5s;
+}
+#Services .container .box .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px #ff305b66,
+    0 10px #ff305b4d,
+    0 15px #ff305b33,
+    0 20px #ff305b1a,
+    0 25px #ff305b0d,
+    -5px 5px 40px #64000066;
+}
+
+#Services .container .box .card i {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+#Services .container .box .card h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#Services .container .box .card p {
+    color: var(--paragraph-color);
+}

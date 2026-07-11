@@ -45,7 +45,6 @@
         padding-block: 10px;
     }
 
-
     nav .nav-links ul {
         display: flex;
         flex-direction: column;
@@ -102,8 +101,16 @@
         padding: 10px 15px;
     }
 
+    /* Services section */
     #Services .container .box {
         width: 100%;
+    }
+
+    /* Our Portfolio Section */
+    #Portfolio .projects .card {
+        width: calc((100%) - 20px);
+        max-width: 280px;
+        margin: auto;
     }
 
 }
@@ -136,11 +143,18 @@
         font-size: 50px;
     }
 
-    /*^ Services section */
+    /* Services section */
     #Services .container .box {
         gap: 20px;
         width: 44%;
         min-width: 250px;
+    }
+
+    /* Our Portfolio Section */
+    #Portfolio .projects .card {
+        width: calc((100% / 2) - 10px);
+        max-width: 280px;
+        margin: auto;
     }
 }
 

@@ -4,7 +4,7 @@ header {
     height: 100dvh;
 }
 
-/** Navbar section */
+/*^ Navbar section */
 nav {
     position: fixed;
     background-color: #333333;
@@ -80,7 +80,7 @@ nav .btn-links {
     display: none;
 }
 
-/** Hero section */
+/*^ Hero section */
 
 .hero {
     width: 100%;
@@ -415,7 +415,6 @@ header .scroll::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
 }
 
 #Services .container .box {
@@ -424,7 +423,7 @@ header .scroll::after {
 
 #Services .container .box .card {
     margin: auto;
-    max-width: 250px;
+    width: 90%;
     text-align: center;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
@@ -444,13 +443,12 @@ header .scroll::after {
 
 #Services .container .box .card i {
     font-size: 30px;
-    margin-bottom: 15px;
     color: var(--primary-color);
 }
 
 #Services .container .box .card h5 {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-block: 10px;
 }
 
 #Services .container .box .card p {

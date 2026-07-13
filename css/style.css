@@ -514,6 +514,7 @@ header .scroll::after {
     border-radius: 50%;
     transition-duration: 1s;
 }
+
 #Portfolio .projects .card:hover .layout {
     width: 100%;
     height: 100%;
@@ -548,8 +549,82 @@ header .scroll::after {
     border-radius: 10px;
     font-size: 14px;
 }
-#Portfolio .projects .card:hover a{
+
+#Portfolio .projects .card:hover a {
     bottom: 35px;
     transition-duration: 1s;
     transition-delay: 1.2s;
+}
+
+/** Blog Section */
+
+#Blog .blog-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Blog .blog-content .box {
+    width: 33.33%;
+}
+
+#Blog .blog-content .box .item {
+    margin: auto;
+    width: 300px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Blog .blog-content .box .item .image {
+    width: 100%;
+    height: 180px;
+}
+
+#Blog .blog-content .box .item .image img,
+#Blog .blog-content .box .item iframe {
+    width: 100%;
+    height: 100%;
+}
+#Blog .blog-content .box .item .content {
+    padding: 25px 20px;
+}
+#Blog .blog-content .box .item .content h3{
+font-size: 14px;
+}
+#Blog .blog-content .box .item .content h2{
+    font-size: 18px;
+    margin-block:15px;
+}
+#Blog .blog-content .box .item .content p{
+    line-height: 1.5;
+    color: var(--paragraph-color);
+}
+#Blog .blog-content .box .item .content button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    margin-top: 10px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#Blog .blog-content .box .item .content button:hover {
+    background-color: var(--primary-color);
+}
+
+#Blog .blog-content .box .item .content button:hover a {
+    color: #fff;
+}
+
+#Blog .blog-content .box .item .content button a {
+    color: var(--primary-color);
+    transition-duration: .5s;
+}
+#Blog .blog-content .box .item .content button i{
+    transition-duration: .5s;
+}
+#Blog .blog-content .box .item .content button:hover i{
+    margin-left:8px;
 }

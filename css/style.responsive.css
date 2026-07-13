@@ -113,6 +113,16 @@
         margin: auto;
     }
 
+    /** Blog Section */
+    #Blog .blog-content .box {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #Blog .blog-content .box .item {
+        width: 280px;
+    }
+
 }
 
 /* 450 */
@@ -156,6 +166,12 @@
         max-width: 280px;
         margin: auto;
     }
+
+    /** Blog Section */
+    #Blog .blog-content .box {
+        width: 50%;
+    }
+
 }
 
 /* 850 */
@@ -195,6 +211,11 @@
 
     #Services .container .box {
         width: 20%;
+    }
+
+    /** Blog Section */
+    #Blog .blog-content .box {
+        width: 33.33%;
     }
 }
 

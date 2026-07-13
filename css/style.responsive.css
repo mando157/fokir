@@ -113,7 +113,7 @@
         margin: auto;
     }
 
-    /** Blog Section */
+    /* Blog Section */
     #Blog .blog-content .box {
         width: 100%;
         margin-bottom: 25px;
@@ -123,6 +123,25 @@
         width: 280px;
     }
 
+    /* Contact Us section */
+    #Contact .container form {
+        width: 100%;
+    }
+
+    #Contact .container form .name-email {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #Contact .container form button {
+        width: initial;
+    }
+
+    /* Footer section */
+
+    footer p {
+        font-size: 12px;
+    }
 }
 
 /* 450 */
@@ -141,6 +160,11 @@
     /* About section */
     #About .content .about-me {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Contact Us section */
+    #Contact .container form {
+        width: 300px;
     }
 
 }
@@ -178,17 +202,10 @@
 @media (min-width: 769px) and (max-width: 1300px) {
 
     /* About section */
-
-    #About .content .about-me .info {
-        font-size: 11px;
+    #About .container {
+        gap: 0px;
     }
 
-}
-
-/* 1050 */
-@media (min-width: 992px) and (max-width: 1300px) {
-
-    /* About section */
     #About .container .content {
         width: 50%;
     }
@@ -208,6 +225,21 @@
     #About .content button {
         padding: 10px 15px;
     }
+
+    /** Contact Us section */
+    #Contact .container form {
+        width: 70%;
+    }
+
+    #Contact .container form .name-email {
+        gap: 10px;
+        flex-direction: row;
+    }
+
+}
+
+/* 1050 */
+@media (min-width: 992px) and (max-width: 1300px) {
 
     #Services .container .box {
         width: 20%;
